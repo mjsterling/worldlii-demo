@@ -1,0 +1,198 @@
+@media only screen and (min-aspect-ratio: 3/4) {
+  body {
+    font-size: 1.8vh;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5.5vh;
+  }
+
+  #scrollcontainer {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    width: 70%;
+    height: 92%;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 15%;
+    height: 100%;
+    font-size: 2vh;
+  }
+  #navbar a {
+    padding: 0.5%;
+    height: 100%;
+  }
+  .sidebar h3 {
+    padding: 3vh 0 2vh;
+    font-size: 2.4vh;
+  }
+
+  .sidebar h3:first-child {
+      border-top: none;
+  }
+
+  .sidebar > * {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  #sidebarleft {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  #sidebarright {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  .last-sublink {
+    padding-bottom: 3vh;
+  }
+
+
+
+  #placeholder {
+    opacity: 0;
+  }
+
+  #searchlinks {
+    color: var(--darkblue);
+    padding: 0.5% 0 1% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #searchlinks a {
+    padding: 0 1%;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  #articlelist li {
+    font-size: 1.7vh;
+    margin: 0 auto;
+    height: 5vh;
+    color: black;
+    padding-top: 0.6%;
+  }
+
+  #contribute {
+    height: 2.5vh;
+  }
+
+  #header {
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #pgtitle {
+    display: flex;
+    flex-flow: column wrap;
+    height: 15%;
+    width: 100%;
+  }
+
+  #searchbar {
+    height: 3vh;
+    font-size: 2vh;
+    width: 80%;
+  }
+
+  #articletitle {
+    text-align: center;
+  }
+
+  #bodycontent {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #article {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #banner {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  #footer {
+    padding: 2% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #submitbtn {
+    font-size: 2vh;
+    height: 3vh;
+    width: 5vw;
+  }
+
+  #navbar {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--darkblue);
+    height: 6%;
+    position: fixed;
+    top: 0;
+    padding: 0 1%;
+    left: 15%;
+    background-color: white;
+    z-index: 1;
+  }
+
+  #sidebarleft {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #sidebarright {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  #logo {
+    max-height: 15vh;
+    max-width: 15vh;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

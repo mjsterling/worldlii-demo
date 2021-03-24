@@ -1,0 +1,205 @@
+@media only screen and (max-aspect-ratio: 3/4) {
+
+    body {
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    #search {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.8vh;
+        padding: 4% 0 2%;
+    }
+
+    h2 {
+        font-size: 2.5vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+    #articlelist {
+        text-align: left;
+    }
+
+    #articlelist li {
+        padding: 3% 2%;
+    }
+
+    #banner {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+
+    #header {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    #logo {
+        max-height: 20vh;
+        max-width: 20vh;
+      }
+
+      #navbar {
+          height: 10%;
+          width: 100%;
+          background-color: white;
+          z-index: 2;
+          padding: 5%;
+          position: fixed;
+          top: 10%;
+          border-bottom: 2px solid var(--lightblue);
+      }
+
+      #navbar a {
+          margin: 0 5%;
+          height: 100%;
+          box-sizing: border-box;
+      }
+
+    #placeholder {
+        display: none;
+      }
+
+    #scrollcontainer {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 95%;
+    }
+
+    #coop_banner200910062 {
+        width: 90vw;
+        height: 23vh;
+    }
+
+    #searchbar {
+        height: 3vh;
+        font-size: 2vh;
+        width: 75vw;
+      }
+
+      #searchlinks {
+          display: flex;
+          width: 100%;
+          flex-direction: row nowrap;
+          justify-content: space-around;
+          padding: 2% 0;
+      }
+
+      #submitbtn {
+        font-size: 2vh;
+        height: 3vh;
+        width: 20vw;
+      }
+
+    .sidebar {
+        color: white;
+        background-color: var(--darkblue);
+        font-size: 2vh;
+        padding: 5% 0;
+      }
+      
+      .sidebar > * {
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+        color: var(--darkblue);
+      }
+      
+      #sidebarleft {
+        position: fixed;
+        height: 80%;
+        left: 0;
+        top: 20%;
+        width: 50vw;
+        background: white;
+        color: var(--darkblue);
+      }
+      
+      #sidebarright {
+        position: fixed;
+        height: 80%;
+        right: 0;
+        top: 20%;
+        width: 50vw;
+        background: white;
+        color: var(--darkblue);
+      }
+
+      .last-sublink {
+        padding-bottom: 3vh;
+      }
+
+    .hamburger {
+      position: fixed;
+      right: 0%;
+      top: 1%;
+      z-index: 3;
+    }
+
+    #hamburger-pgtitle {
+        z-index: 2;
+        height: 10%;
+        background: white;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 0;
+    }
+
+    #hamburger-pgtitle h1 {
+        text-align: center;
+        width: 100%;
+        color: var(--darkblue);
+    }
+
+    .is-visible {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+        align-content: space-evenly;
+    }
+
+  .hamburger--3dy {
+    background: transparent;
+    border: 0;
+  }
+
+  .hamburger--3dy .hamburger-box {
+    perspective: 80px; }
+  
+  .hamburger--3dy .hamburger-inner {
+    transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+    .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
+      transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  
+  .hamburger--3dy.is-active .hamburger-inner {
+    background-color: transparent !important;
+    transform: rotateX(-180deg); }
+    .hamburger--3dy.is-active .hamburger-inner::before {
+      transform: translate3d(0, 10px, 0) rotate(45deg); }
+    .hamburger--3dy.is-active .hamburger-inner::after {
+      transform: translate3d(0, -10px, 0) rotate(-45deg); }
+}

@@ -1,12 +1,37 @@
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="hamburgers.css" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>World Legal Information Institute (WorldLII)</title>
+    <script>
+      function toggleMenu() {
+        document.getElementById("hamburgerbtn").classList.toggle("is-active");
+        let navlist = document.getElementsByTagName("nav");
+        for (i = 0; i < navlist.length; i++) {
+          navlist[i].classList.toggle("is-visible");
+        }
+      }
+    </script>
   </head>
-
+  <nav id="hamburger-pgtitle">
+    <h1>WorldLII.org</h1>
+  </nav>
   <body>
+    <div class="hamburger">
+      <button
+        id="hamburgerbtn"
+        class="hamburger--3dy"
+        onClick="toggleMenu()"
+        type="button"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
     <nav id="navbar">
       <a href="http://www.worldlii.org/worldlii/index.html">About</a>
       <a href="http://www.worldlii.org/worldlii/contact.html">Contact</a>
@@ -21,518 +46,527 @@
 
     <nav class="sidebar" id="sidebarleft">
       <h3>Global</h3>
-          <a href="http://www.worldlii.org/countries.html">All Countries</a>
-          <a href="http://www.worldlii.org/databases.html">All Databases</a>
-          <a href="http://www.worldlii.org/regions.html">All Regions</a></li>
-          <a href="http://www.worldlii.org/regions.html#other">Other Groupings</a>
-          <h3>Libraries &amp; Projects</h3>
+      <a href="http://www.worldlii.org/countries.html">All Countries</a>
+      <a href="http://www.worldlii.org/databases.html">All Databases</a>
+      <a href="http://www.worldlii.org/regions.html">All Regions</a>
+      <a class="last-sublink" href="http://www.worldlii.org/regions.html#other"
+        >Other Groupings</a
+      >
 
-          <a href="http://www.worldlii.org/int/special/appeal_ct/"
-            >Final Appeal Courts</a
-          >
-          <a href="http://www.worldlii.org/int/cases/"
-            >International Decisions</a
-          >
-
-          <a href="http://www.worldlii.org/int/journals/">Law Journals</a>
-
-          <a href="http://www.worldlii.org/int/special/lawreform/"
-            >Law Reform</a
-          >
-
-          <a href="http://www.worldlii.org/int/special/treaties/">Treaties</a>
-
-          <a href="http://www.worldlii.org/int/special/ihl/"
-            >International Law</a
-          >
-
-          <a href="http://www.worldlii.org/int/special/privacy/">Privacy Law</a>
-
+      <h3>Libraries &amp; Projects</h3>
+      <a href="http://www.worldlii.org/int/special/appeal_ct/"
+        >Final Appeal Courts</a
+      >
+      <a href="http://www.worldlii.org/int/cases/">International Decisions</a>
+      <a href="http://www.worldlii.org/int/journals/">Law Journals</a>
+      <a href="http://www.worldlii.org/int/special/lawreform/">Law Reform</a>
+      <a href="http://www.worldlii.org/int/special/treaties/">Treaties</a>
+      <a href="http://www.worldlii.org/int/special/ihl/">International Law</a>
+      <a
+        class="last-sublink"
+        href="http://www.worldlii.org/int/special/privacy/"
+        >Privacy Law</a
+      >
       <h3>Catalog</h3>
-
-          <a href="http://www.worldlii.org/catalog/270.html">All Categories</a>
-      <a href="http://www.worldlii.org/catalog/272.html">Subjects</a></li>
-
+      <a href="http://www.worldlii.org/catalog/270.html">All Categories</a>
+      <a class="last-sublink" href="http://www.worldlii.org/catalog/272.html"
+        >Subjects</a
+      >
     </nav>
+
     <nav class="sidebar" id="sidebarright">
       <h3>WorldLII Stakeholders</h3>
-          <a
-            href="http://www.austlii.edu.au/austlii/sponsors/worldlii_contribute.pdf"
-          >
-            <p><img
-              src="./World Legal Information Institute (WorldLII)_files/new_contribute.jpg"
-              id="contribute" alt="Contribute $$$"
-            />
-          </a>
-          <a
-            href="http://www.austlii.edu.au/austlii/sponsors/worldlii_contribute.pdf"
-            >PDF</a
-          ></p>
-          <a href="http://www.austlii.edu.au/cgi-bin/s_juris.cgi?int"
-            >Funding Supporters</a
-          >
-          <a href="http://www.worldlii.org/worldlii/sponsors/#supporting_liis"
-            >Supporting LIIs</a
-          >
+      <a
+        href="http://www.austlii.edu.au/austlii/sponsors/worldlii_contribute.pdf"
+      >
+        <img
+          src="./assets/new_contribute.jpg"
+          id="contribute"
+          alt="Contribute $$$"
+        />
+      </a>
+      <a href="http://www.austlii.edu.au/cgi-bin/s_juris.cgi?int"
+        >Funding Supporters</a
+      >
+      <a
+        class="last-sublink"
+        href="http://www.worldlii.org/worldlii/sponsors/#supporting_liis"
+        >Supporting LIIs</a
+      >
+
       <h3>Law via Internet Conference</h3>
-          <a href="http://www.austlii.edu.au/austlii/conference/"
-            >Conferences 1997-</a
-          >
-          <a href="http://www.worldlii.org/au/other/CompLRes/"
-            >Conference Papers Archive</a
-          >
+      <a href="http://www.austlii.edu.au/austlii/conference/"
+        >Conferences 1997-</a
+      >
+      <a class="last-sublink" href="http://www.worldlii.org/au/other/CompLRes/"
+        >Conference Papers Archive</a
+      >
 
       <h3>Research Projects</h3>
-          <a href="http://www.austlii.edu.au/austlii/research/2009/lief/"
-            >International Law Library</a
-          >
+      <a
+        class="last-sublink"
+        href="http://www.austlii.edu.au/austlii/research/2009/lief/"
+        >International Law Library</a
+      >
 
       <h3
         title="Special features and tools that will assist with your research tasks"
       >
         Special Features &amp; Tools
       </h3>
-          <a
-            href="http://www.austlii.edu.au/techlib/toolbar/"
-            title="The WorldLII Toolbar"
-            >WorldLII Toolbar</a
-          >
-          <a href="http://www.worldlii.org/worldlii/news/" title="WorldLII News"
-            >WorldLII News</a
-          > <a href="http://www.worldlii.org/worldlii/news/#sub">Subscribe</a>
-          <a href="http://www.worldlii.org/worldlii/declaration/"
-            >Declaration on Free Access to Law</a
-          >
-          <a href="http://www.worldlii.org/worldlii/help/"
-            >Training Materials</a
-          >
+      <a
+        href="http://www.austlii.edu.au/techlib/toolbar/"
+        title="The WorldLII Toolbar"
+      >
+        WorldLII Toolbar
+      </a>
+      <a href="http://www.worldlii.org/worldlii/news/" title="WorldLII News"
+        >WorldLII News</a
+      >
+      <a href="http://www.worldlii.org/worldlii/news/#sub">Subscribe</a>
+      <a href="http://www.worldlii.org/worldlii/declaration/"
+        >Declaration on Free Access to Law</a
+      >
+      <a class="last-sublink" href="http://www.worldlii.org/worldlii/help/"
+        >Training Materials</a
+      >
     </nav>
     <div id="scrollcontainer">
-    <div id="bodycontent">
-    <header id="header">
-      <div id="banner">
-        <img id="logo"
-        src="http://www.worldlii.org/images/logos/WorldLII.gif"
-        alt="WorldLII"
-      />
-      <div id="pgtitle">
-      <h1>World Legal Information Institute</h1>
-      
-    <h2>Free, independent and non-profit access to worldwide law</h2>
-    </div>
-    <div></div>
-  </div>
+      <header id="header">
+        <div id="banner">
+          <img
+            id="logo"
+            src="http://www.worldlii.org/images/logos/WorldLII.gif"
+            alt="WorldLII"
+          />
+          <div id="pgtitle">
+            <h1>World Legal Information Institute</h1>
+            <h2>Free, independent and non-profit access to worldwide law</h2>
+          </div>
+          <img
+            id="placeholder"
+            src="http://www.worldlii.org/images/logos/WorldLII.gif"
+            alt="WorldLII"
+          />
+        </div>
 
-      <form
-        method="GET"
-        action="http://www.worldlii.org/cgi-bin/sinosrch.cgi"
-        id="searchbar"
-      >
-        <input name="query" size="55" value="" type="TEXT" />
-        <input type="hidden" name="results" value="50" />
-        <input type="SUBMIT" value="Search" name="submit" />
-        <input type="hidden" name="rank" value="on" />
-        <input type="hidden" name="callback" value="on" />
-        <input type="hidden" name="method" value="auto" />
-        <input type="hidden" name="meta" value="/worldlii" />
-      </form>
-      <nav id="searchlinks">
-        <a
-          href="http://www.worldlii.org/forms/search1.html"
-          title="Search over WorldLII Databases and select individual databases to search"
-          >Advanced Search</a
+        <form
+          method="GET"
+          action="http://www.worldlii.org/cgi-bin/sinosrch.cgi"
+          id="search"
         >
-        <a href="http://www.worldlii.org/LawCite/">LawCite</a>
-        <a href="http://www.worldlii.org/worldlii/help/search.html">Help</a>
-      </nav>
-      <p><a href="http://www.worldlii.org/databases.html">1834 databases</a> from
-      123 jurisdictions via
-      <a href="http://www.worldlii.org/worldlii/sponsors/#supporting_liis"
-        >14 Legal Information Institutes</a
-      ></p>
-    </header>
+          <input name="query" size="55" value="" type="text" id="searchbar" />
+          <input type="hidden" name="results" value="50" />
+          <input type="SUBMIT" value="Search" name="submit" id="submitbtn" />
+          <input type="hidden" name="rank" value="on" />
+          <input type="hidden" name="callback" value="on" />
+          <input type="hidden" name="method" value="auto" />
+          <input type="hidden" name="meta" value="/worldlii" />
+        </form>
+        <nav id="searchlinks">
+          <a
+            href="http://www.worldlii.org/forms/search1.html"
+            title="Search over WorldLII Databases and select individual databases to search"
+            >Advanced Search</a
+          >
+          <a href="http://www.worldlii.org/LawCite/">LawCite</a>
+          <a href="http://www.worldlii.org/worldlii/help/search.html">Help</a>
+        </nav>
+        <p>
+          <a href="http://www.worldlii.org/databases.html">1834 databases</a>
+          from 123 jurisdictions via
+          <a href="http://www.worldlii.org/worldlii/sponsors/#supporting_liis"
+            >14 Legal Information Institutes</a
+          >
+        </p>
+      </header>
+      <div id="bodycontent">
+        <article id="article">
+          <div id="articletitle">
+            <h2 class="bold">News &amp; Database Additions</h2>
+            <h3>Last updated 23 March 2021</h3>
+          </div>
+          <ul id="articlelist">
+            <li>
+              <a href="http://www.worldlii.org/ph/cases/PHNPCommAO/"
+                >Philippines National Privacy Commission - Advisory Opinions
+                2016</a
+              >
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/ph/cases/PHNPCommCO/"
+                >Philippines National Privacy Commission - Commission-issued
+                Orders 2018</a
+              >
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/GTMDPL/"
+                >Global Tables and Maps of Data Privacy Laws 2011</a
+              >
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/journals/IntPrivDPLawMon/"
+                >International Privacy and Data Protection Law Monographs
+                1973</a
+              >
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNSRPPub/"
+                >United Nations Special Rapporteur on the Right to Privacy
+                Publications 2016</a
+              >
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/journals/IntLawMon/"
+                >International Law Monographs 1689-1950</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/de/journals/GoJlIntLaw/"
+                >Goettingen Journal of International Law 2009-</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCATCO/"
+                >United Nations Committee Against Torture - Concluding
+                Observations 1989-</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/cases/ILOAT/"
+                >International Labour Organization Administrative Tribunal
+                1947</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCEDAWCO/"
+                >United Nations Committee on the Elimination of Discrimination
+                Against Women - Concluding Observations 1958</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCEDAWGC/"
+                >United Nations Committee on the Elimination of Discrimination
+                Against Women - General Comments 1986</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCEDAWSPR/"
+                >United Nations Committee on the Elimination of Discrimination
+                Against Women - State Party Reports 1982</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCERDCO/"
+                >United Nations Committee on the Elimination of Racial
+                Discrimination - Concluding Observations 1991</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCERDGC/"
+                >United Nations Committee on the Elimination of Racial
+                Discrimination - General Comments 1972</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCERDSPR/"
+                >United Nations Committee on the Elimination of Racial
+                Discrimination - State Party Reports 1972</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCESCRCO/"
+                >United Nations Committee on Economic, Social and Cultural
+                Rights - Conluding Observations 1980</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCESCRSPR/"
+                >United Nations Committee on Economic, Social and Cultural
+                Rights - State Party Reports 1977</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a href="http://www.worldlii.org/int/other/UNCMWCO/"
+                >United Nations Committee on Migrant Workers - Concluding
+                Observations 2006</a
+              >
+              (WorldLII)
+            </li>
+            <li>
+              <a
+                class="bold"
+                href="http://www.worldlii.org/worldlii/recent.html"
+                >Past additions...</a
+              >
+            </li>
+          </ul>
+          <h3>Latest Catalog Additions</h3>
+          <ul>
+            <li>
+              <a class="bold" href="http://www.worldlii.org/catalog/new.html"
+                >Past additions...</a
+              >
+            </li>
+          </ul>
+        </article>
 
-    <article id="article">
-      <div id="articletitle">
-      <h2>News &amp; Database Additions</h2>
-      <h4>Last updated 23 March 2021</h4>
-      </div>
-      <ul>
-        <li>
-          <a href="http://www.worldlii.org/ph/cases/PHNPCommAO/"
-            >Philippines National Privacy Commission - Advisory Opinions 2016</a
-          >
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/ph/cases/PHNPCommCO/"
-            >Philippines National Privacy Commission - Commission-issued Orders
-            2018</a
-          >
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/GTMDPL/"
-            >Global Tables and Maps of Data Privacy Laws 2011</a
-          >
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/journals/IntPrivDPLawMon/"
-            >International Privacy and Data Protection Law Monographs 1973</a
-          >
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNSRPPub/"
-            >United Nations Special Rapporteur on the Right to Privacy
-            Publications 2016</a
-          >
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/journals/IntLawMon/"
-            >International Law Monographs 1689-1950</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/de/journals/GoJlIntLaw/"
-            >Goettingen Journal of International Law 2009-</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCATCO/"
-            >United Nations Committee Against Torture - Concluding Observations
-            1989-</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/cases/ILOAT/"
-            >International Labour Organization Administrative Tribunal 1947</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCEDAWCO/"
-            >United Nations Committee on the Elimination of Discrimination
-            Against Women - Concluding Observations 1958</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCEDAWGC/"
-            >United Nations Committee on the Elimination of Discrimination
-            Against Women - General Comments 1986</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCEDAWSPR/"
-            >United Nations Committee on the Elimination of Discrimination
-            Against Women - State Party Reports 1982</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCERDCO/"
-            >United Nations Committee on the Elimination of Racial
-            Discrimination - Concluding Observations 1991</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCERDGC/"
-            >United Nations Committee on the Elimination of Racial
-            Discrimination - General Comments 1972</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCERDSPR/"
-            >United Nations Committee on the Elimination of Racial
-            Discrimination - State Party Reports 1972</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCESCRCO/"
-            >United Nations Committee on Economic, Social and Cultural Rights -
-            Conluding Observations 1980</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCESCRSPR/"
-            >United Nations Committee on Economic, Social and Cultural Rights -
-            State Party Reports 1977</a
-          >
-          (WorldLII)
-        </li>
-        <li>
-          <a href="http://www.worldlii.org/int/other/UNCMWCO/"
-            >United Nations Committee on Migrant Workers - Concluding
-            Observations 2006</a
-          >
-          (WorldLII)
-        </li>
-        <br />
-        <li>
-          <a href="http://www.worldlii.org/worldlii/recent.html"
-            >Past additions...</a
-          >
-        </li>
-        <h4>Latest Catalog Additions</h4>
-        <li>
-          <a href="http://www.worldlii.org/catalog/new.html"
-            >Past additions...</a
-          >
-        </li>
-      </ul>
-    </article>
+        <footer id="footer">
+          <p>
+            WorldLII is coordinated by
+            <a href="http://www.austlii.%20edu.au/">AustLII</a>, a joint
+            facility of the UTS and UNSW Faculties of Law.
+          </p>
+          <p>
+            WorldLII is a member of the
+            <a href="http://www.falm.info/">Free Access to Law</a> movement:
+          </p>
 
-    <footer id="footer">
-      <p>
-        WorldLII is coordinated by
-        <a href="http://www.austlii.%20edu.au/">AustLII</a>, a joint facility of
-        the UTS and UNSW Faculties of Law.
-      </p>
-      <p>
-        WorldLII is a member of the
-        <a href="http://www.falm.info/">Free Access to Law</a> movement:
-      </p>
-
-      <img
-        name="coop_banner200910062"
-        src="./World Legal Information Institute (WorldLII)_files/coop_banner.gif"
-        width="540"
-        height="262"
-        border="0"
-        id="coop_banner200910062"
-        usemap="#m_coop_banner200910062"
-        alt=""
-      />
-      <map name="m_coop_banner200910062" id="m_coop_banner200910062">
-        <area
-          shape="rect"
-          coords="384,198,425,245"
-          href="http://www.worldlii.org/"
-          title="WorldLII"
-          alt="WorldLII"
-        />
-        <area
-          shape="rect"
-          coords="319,203,372,238"
-          href="http://www.ulii.org/"
-          title="ULII"
-          alt="ULII"
-        />
-        <area
-          shape="rect"
-          coords="271,200,308,243"
-          href="http://www.lawreform.go.th/"
-          title="TLRC"
-          alt="TLRC"
-        />
-        <area
-          shape="rect"
-          coords="212,200,262,243"
-          href="http://www.saflii.org/"
-          title="SAFLII"
-          alt="SAFLII"
-        />
-        <area
-          shape="rect"
-          coords="165,195,204,247"
-          href="http://www.paclii.org/"
-          title="PacLII"
-          alt="PacLII"
-        />
-        <area
-          shape="rect"
-          coords="117,195,160,247"
-          href="http://www.nzlii.org/"
-          title="NZLII"
-          alt="NZLII"
-        />
-        <area
-          shape="rect"
-          coords="426,153,483,195"
-          href="http://www.malawilii.org/"
-          title="MalawiLII"
-          alt="MalawiLII"
-        />
-        <area
-          shape="rect"
-          coords="366,153,413,195"
-          href="http://www.liiofindia.org/"
-          title="LIIofIndia"
-          alt="LIIofIndia"
-        />
-        <area
-          shape="rect"
-          coords="278,153,355,188"
-          href="http://www.law.cornell.edu/"
-          title="LII (Cornell)"
-          alt="LII (Cornell)"
-        />
-        <area
-          shape="rect"
-          coords="187,157,270,186"
-          href="http://www.lexum.org/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="47,157,166,186"
-          href="http://www.lawphil.net/"
-          title="LawPhil"
-          alt="LawPhil"
-        />
-        <area
-          shape="rect"
-          coords="440,115,528,142"
-          href="http://www.klri.re.kr/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="390,105,431,151"
-          href="http://www.ksl.edu.np/"
-          title="KSL"
-          alt="KSL"
-        />
-        <area
-          shape="rect"
-          coords="307,112,384,143"
-          href="http://www.kenyalaw.org/"
-          alt=""
-        />
-        <!--
+          <img
+            name="coop_banner200910062"
+            src="./assets/coop_banner.gif"
+            width="540"
+            height="262"
+            id="coop_banner200910062"
+            usemap="#m_coop_banner200910062"
+            alt=""
+          />
+          <map name="m_coop_banner200910062" id="m_coop_banner200910062">
+            <area
+              shape="rect"
+              coords="384,198,425,245"
+              href="http://www.worldlii.org/"
+              title="WorldLII"
+              alt="WorldLII"
+            />
+            <area
+              shape="rect"
+              coords="319,203,372,238"
+              href="http://www.ulii.org/"
+              title="ULII"
+              alt="ULII"
+            />
+            <area
+              shape="rect"
+              coords="271,200,308,243"
+              href="http://www.lawreform.go.th/"
+              title="TLRC"
+              alt="TLRC"
+            />
+            <area
+              shape="rect"
+              coords="212,200,262,243"
+              href="http://www.saflii.org/"
+              title="SAFLII"
+              alt="SAFLII"
+            />
+            <area
+              shape="rect"
+              coords="165,195,204,247"
+              href="http://www.paclii.org/"
+              title="PacLII"
+              alt="PacLII"
+            />
+            <area
+              shape="rect"
+              coords="117,195,160,247"
+              href="http://www.nzlii.org/"
+              title="NZLII"
+              alt="NZLII"
+            />
+            <area
+              shape="rect"
+              coords="426,153,483,195"
+              href="http://www.malawilii.org/"
+              title="MalawiLII"
+              alt="MalawiLII"
+            />
+            <area
+              shape="rect"
+              coords="366,153,413,195"
+              href="http://www.liiofindia.org/"
+              title="LIIofIndia"
+              alt="LIIofIndia"
+            />
+            <area
+              shape="rect"
+              coords="278,153,355,188"
+              href="http://www.law.cornell.edu/"
+              title="LII (Cornell)"
+              alt="LII (Cornell)"
+            />
+            <area
+              shape="rect"
+              coords="187,157,270,186"
+              href="http://www.lexum.org/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="47,157,166,186"
+              href="http://www.lawphil.net/"
+              title="LawPhil"
+              alt="LawPhil"
+            />
+            <area
+              shape="rect"
+              coords="440,115,528,142"
+              href="http://www.klri.re.kr/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="390,105,431,151"
+              href="http://www.ksl.edu.np/"
+              title="KSL"
+              alt="KSL"
+            />
+            <area
+              shape="rect"
+              coords="307,112,384,143"
+              href="http://www.kenyalaw.org/"
+              alt=""
+            />
+            <!--
 <area shape="rect" coords="225,115,305,142" href="http://juriniger.lexum.umontreal.ca/" alt="" /> 
 <area shape="rect" coords="144,111,220,145" href="http://www.juriburkina.org/" alt="" /> 
 -->
-        <area
-          shape="rect"
-          coords="95,104,132,150"
-          href="http://www.jura.uni-saarland.de/"
-          title="JIPS"
-          alt="JIPS"
-        />
-        <area
-          shape="rect"
-          coords="8,116,87,143"
-          href="http://www.jerseylaw.je/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="479,61,528,96"
-          href="http://www.ittig.cnr.it/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="425,56,475,102"
-          href="http://www.irlii.org/"
-          title="IRLII"
-          alt="IRLII"
-        />
-        <area
-          shape="rect"
-          coords="347,67,417,96"
-          href="http://www.iijusticia.edu.ar/"
-          title="IIJusticia"
-          alt="IIJusticia"
-        />
-        <area
-          shape="rect"
-          coords="299,61,340,104"
-          href="http://info.juridicas.unam.mx/"
-          title="IIJ UNAM"
-          alt="IIJ UNAM"
-        />
-        <area
-          shape="rect"
-          coords="235,63,291,101"
-          href="http://idt.uab.es/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="182,63,227,101"
-          href="http://www.hklii.org/"
-          title="HKLII"
-          alt="HKLII"
-        />
-        <area
-          shape="rect"
-          coords="99,67,176,96"
-          href="http://www.glin.gov/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="8,67,93,96"
-          href="http://www.droit.org/"
-          title="Droit.org"
-          alt="Droit.org"
-        />
-        <area
-          shape="rect"
-          coords="440,17,524,42"
-          href="http://www.cylaw.org/"
-          title="CyLaw"
-          alt="CyLaw"
-        />
-        <area
-          shape="rect"
-          coords="383,9,434,54"
-          href="http://www.commonlii.org/"
-          title="CommonLII"
-          alt="CommonLII"
-        />
-        <area
-          shape="rect"
-          coords="327,13,371,56"
-          href="http://www.legalabbrevs.cardiff.ac.uk/"
-          title="Cardiff"
-          alt="Cardiff"
-        />
-        <area
-          shape="rect"
-          coords="239,17,318,50"
-          href="http://www.canlii.org/"
-          alt=""
-        />
-        <area
-          shape="rect"
-          coords="191,13,235,56"
-          href="http://www.bailii.org/"
-          title="BAILII"
-          alt="BAILII"
-        />
-        <area
-          shape="rect"
-          coords="144,15,187,58"
-          href="http://www.austlii.edu.au/"
-          title="AustLII"
-          alt="AustLII"
-        />
-        <area
-          shape="rect"
-          coords="93,15,136,58"
-          href="http://www.asianlii.org/"
-          title="AsianLII"
-          alt="AsianLII"
-        />
-        <area
-          shape="rect"
-          coords="14,17,80,50"
-          href="http://www.altlaw.org/"
-          title="AltLaw"
-          alt="AltLaw"
-        />
-      </map>
-    </footer>
-    </div>
+            <area
+              shape="rect"
+              coords="95,104,132,150"
+              href="http://www.jura.uni-saarland.de/"
+              title="JIPS"
+              alt="JIPS"
+            />
+            <area
+              shape="rect"
+              coords="8,116,87,143"
+              href="http://www.jerseylaw.je/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="479,61,528,96"
+              href="http://www.ittig.cnr.it/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="425,56,475,102"
+              href="http://www.irlii.org/"
+              title="IRLII"
+              alt="IRLII"
+            />
+            <area
+              shape="rect"
+              coords="347,67,417,96"
+              href="http://www.iijusticia.edu.ar/"
+              title="IIJusticia"
+              alt="IIJusticia"
+            />
+            <area
+              shape="rect"
+              coords="299,61,340,104"
+              href="http://info.juridicas.unam.mx/"
+              title="IIJ UNAM"
+              alt="IIJ UNAM"
+            />
+            <area
+              shape="rect"
+              coords="235,63,291,101"
+              href="http://idt.uab.es/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="182,63,227,101"
+              href="http://www.hklii.org/"
+              title="HKLII"
+              alt="HKLII"
+            />
+            <area
+              shape="rect"
+              coords="99,67,176,96"
+              href="http://www.glin.gov/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="8,67,93,96"
+              href="http://www.droit.org/"
+              title="Droit.org"
+              alt="Droit.org"
+            />
+            <area
+              shape="rect"
+              coords="440,17,524,42"
+              href="http://www.cylaw.org/"
+              title="CyLaw"
+              alt="CyLaw"
+            />
+            <area
+              shape="rect"
+              coords="383,9,434,54"
+              href="http://www.commonlii.org/"
+              title="CommonLII"
+              alt="CommonLII"
+            />
+            <area
+              shape="rect"
+              coords="327,13,371,56"
+              href="http://www.legalabbrevs.cardiff.ac.uk/"
+              title="Cardiff"
+              alt="Cardiff"
+            />
+            <area
+              shape="rect"
+              coords="239,17,318,50"
+              href="http://www.canlii.org/"
+              alt=""
+            />
+            <area
+              shape="rect"
+              coords="191,13,235,56"
+              href="http://www.bailii.org/"
+              title="BAILII"
+              alt="BAILII"
+            />
+            <area
+              shape="rect"
+              coords="144,15,187,58"
+              href="http://www.austlii.edu.au/"
+              title="AustLII"
+              alt="AustLII"
+            />
+            <area
+              shape="rect"
+              coords="93,15,136,58"
+              href="http://www.asianlii.org/"
+              title="AsianLII"
+              alt="AsianLII"
+            />
+            <area
+              shape="rect"
+              coords="14,17,80,50"
+              href="http://www.altlaw.org/"
+              title="AltLaw"
+              alt="AltLaw"
+            />
+          </map>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
