@@ -1,4 +1,4 @@
-@media only screen and (min-aspect-ratio: 3/4) {
+@media only screen and (min-aspect-ratio: 4/3) {
   body {
     font-size: 1.8vh;
   }
@@ -9,6 +9,14 @@
 
   h1 {
     font-size: 5.5vh;
+  }
+
+  h2 {
+    font-size: 2.5vh;
+  }
+
+  h3 {
+    font-size: 2vh;
   }
 
   #scrollcontainer {
@@ -37,7 +45,7 @@
   }
   .sidebar h3 {
     padding: 3vh 0 2vh;
-    font-size: 2.4vh;
+    font-size: 2.2vh;
   }
 
   .sidebar h3:first-child {
@@ -158,7 +166,7 @@
   #submitbtn {
     font-size: 2vh;
     height: 3vh;
-    width: 5vw;
+    width: 6.5vw;
   }
 
   #navbar {

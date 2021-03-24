@@ -82,7 +82,7 @@ li {
 
 .sidebar {
   text-align: center;
-  padding: 1%;
+  padding: 0 1%;
   color: white;
   background-color: var(--darkblue);
   z-index: 1;
@@ -95,4 +95,10 @@ li {
 
 .sidebar h3:first-child {
   border-top: none;
+}
+
+#contribute {
+  border-radius: 1vh;
+  margin: 1%;
+  box-sizing: border-box;
 }
