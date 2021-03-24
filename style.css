@@ -1,104 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=EB+Garamond&display=swap");
-@import url('desktop.css');
-@import url('mobile.css');
+@import url("desktop.css");
+@import url("mobile.css");
 
 :root {
   --darkblue: rgb(0, 41, 82);
   --lightblue: rgb(241, 245, 255);
 }
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    font-family: "Open Sans", sans-serif;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Open Sans", sans-serif;
+}
 
-  a {
-    color: var(--darkblue);
-  }
+a {
+  color: var(--darkblue);
+}
 
-  a:hover {
-    font-weight: bolder;
-  }
+a:hover {
+  font-weight: bolder;
+}
 
-  footer {
-    margin-top: 5%;
-    border-top: 2px solid var(--darkblue);
-    width: 100%;
-  }
-  form {
-    margin: 0 0 2%;
-    width: 40vw;
-  }
+footer {
+  margin-top: 5%;
+  border-top: 2px solid var(--darkblue);
+  width: 100%;
+}
+form {
+  margin: 0 0 2%;
+  width: 40vw;
+}
 
-  h1 {
-    font-family: 'EB Garamond', serif;
-    font-weight: normal;
-    margin: 0;
-  }
-  
-  h2 {
-    font-weight: normal;
-    padding: 0;
-    margin: 1% 0;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style-image: url(./assets/book.png);
-    list-style-position: inside;
-    margin: 0;
-    padding: 0 0.5vw;
-  }
+h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: normal;
+  margin: 0;
+}
 
-  #articlelist li:nth-child(odd) {
-    background: var(--lightblue);
-  }
+h2 {
+  font-weight: normal;
+  padding: 0;
+  margin: 1% 0;
+}
 
-  #submitbtn {
-    background: var(--darkblue);
-    color: white;
-    border-radius: 0.5vh;
-    font-weight: bold;
-  }
-  
-  #submitbtn:hover {
-    cursor: pointer; 
-    background:white;
-    color: var(--darkblue);
-  }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-  .sidebar {
-    text-align: center;
-    padding: 1%;
-    color: white;
-    background-color: var(--darkblue);
-    z-index: 1;
-  }
+li {
+  list-style-image: url(./assets/book.png);
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0.5vw;
+}
 
-  .sidebar h3 {
-    padding: 3vh 0 2vh;
-    border-top: 2px solid var(--lightblue);
-  }
+#articlelist li:nth-child(odd) {
+  background: var(--lightblue);
+}
 
-  .sidebar h3:first-child {
-      border-top: none;
-  }
+#submitbtn {
+  background: var(--darkblue);
+  color: white;
+  border-radius: 0.5vh;
+  font-weight: bold;
+}
 
+#submitbtn:hover {
+  cursor: pointer;
+  background: white;
+  color: var(--darkblue);
+}
 
+.sidebar {
+  text-align: center;
+  padding: 1%;
+  color: white;
+  background-color: var(--darkblue);
+  z-index: 1;
+}
 
+.sidebar h3 {
+  padding: 3vh 0 2vh;
+  border-top: 2px solid var(--lightblue);
+}
 
-
-
+.sidebar h3:first-child {
+  border-top: none;
+}
