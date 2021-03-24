@@ -20,7 +20,7 @@
   }
 
   #hamburger-pgtitle {
-display: none;
+    display: none;
   }
 
   .sidebar {
@@ -31,9 +31,9 @@ display: none;
     height: 100%;
     font-size: 2vh;
   }
+  
   #navbar a {
     padding: 0.5%;
-    height: 100%;
   }
   .sidebar h3 {
     padding: 3vh 0 2vh;
